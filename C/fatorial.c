@@ -1,3 +1,4 @@
+#include<stdio.h>
 long int fat(int n){
     long int retorno=1;
     int i;
@@ -5,4 +6,9 @@ long int fat(int n){
         retorno*=i;
     }
     return retorno;
+}
+
+void main(){
+    //exemplo de utilizacao
+    printf("%li",fat(5));
 }
