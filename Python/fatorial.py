@@ -3,3 +3,6 @@ def fat(n):
     for i in range(1,n+1):
         retorno*=i
     return retorno
+
+#exemplo de como utilizar   
+print(fat(5))
