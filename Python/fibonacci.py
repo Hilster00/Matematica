@@ -5,3 +5,6 @@ def fib(n):
         retorno=sum(anteriores)
         anteriores = [anteriores[1],retorno]
     return anteriores[1]
+
+#exemplo de como utilizar   
+print(fib(9))
