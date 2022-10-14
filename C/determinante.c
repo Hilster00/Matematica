@@ -1,3 +1,4 @@
+#include<stdio.h>
 int determinante(int *matriz,int tamanho){
     if(tamanho == 1){
         return *matriz;
@@ -23,4 +24,25 @@ int determinante(int *matriz,int tamanho){
         det+=(det_soma-det_sub);
     }
     return det;
+}
+
+void main(){
+    int matriz[3][3];
+    
+    //linha 1
+    matriz[0][0]=1;
+    matriz[0][1]=2;
+    matriz[0][2]=3;
+    
+    //linha 2
+    matriz[1][0]=3;
+    matriz[1][1]=2;
+    matriz[1][2]=1;
+    
+    //linha 3
+    matriz[2][0]=1;
+    matriz[2][1]=2;
+    matriz[2][2]=0;
+    //exemplo de utilizacao
+    printf("%i",determinante(&matriz[0][0],3));
 }
