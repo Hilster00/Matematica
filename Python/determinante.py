@@ -17,3 +17,11 @@ def determinante(matriz=[1]):
                 psb=tamanho-1
         det+=(det_soma-det_sub)
     return det
+
+matriz=[
+    [1,2,3],
+    [3,2,1],
+    [3,0,3]
+]
+#exemplo de como utilizar
+print(determinante(matriz))
