@@ -1,3 +1,4 @@
+#include<stdio.h>
 long long int fib(int n){
     long long int a1=0,a2=1,r=0;
     int i;
@@ -7,4 +8,8 @@ long long int fib(int n){
         a2=r;
     }
     return r;
+}
+void main(){
+    //exemplo de utilizacao
+    printf("%lli",fib(10));
 }
