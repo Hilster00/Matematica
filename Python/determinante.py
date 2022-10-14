@@ -4,10 +4,8 @@ def determinante(matriz=[1]):
         return matriz[0][0]
     det=0
     for i in range(tamanho-1):
-        psm=i
-        psb=(tamanho-1)-i
-        det_soma=1
-        det_sub=1
+        psm,psb = i,(tamanho-1)-i
+        det_soma=det_sub=1
         for j in range(tamanho):
             det_soma*=matriz[j][psm]#produto diagonais positivas
             det_sub*=matriz[j][psb]#produto diagonais negativas
