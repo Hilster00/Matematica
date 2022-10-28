@@ -1,10 +1,10 @@
 def pascal(n=1):
     linha1=[1]
-    linha2=[1,2,1]
+    linha2=[1,1]
     if n==1:
         return [1]
     elif n == 2:
-        return [1,2,1]
+        return [1,1]
     retorno=linha2
     for i in range(3,n+1):
         if i%2==0:
